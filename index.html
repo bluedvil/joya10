@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BlueDvil Games — Play & Shop</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">BlueDvil <span class="tag">Games</span></div>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-primary" href="#shop">Shop</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Level up your gaming experience</h1>
+          <p>Buy game credits, premium items, and accessories — fast, secure, and optimized for gamers.</p>
+          <a class="btn-primary large" href="#products">Shop Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-placeholder.png" alt="Gaming hero image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products container">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/product1.png" alt="Game Credits" />
+          <h3>Game Credits Pack</h3>
+          <p class="price">USD 9.99</p>
+          <p class="desc">Instant top-up for popular online games.</p>
+          <button class="btn-outline add-cart" data-id="credits">Add to cart</button>
+        </article>
+        <article class="product-card">
+          <img src="images/product2.png" alt="Gaming Headset" />
+          <h3>Pro Gaming Headset</h3>
+          <p class="price">USD 49.99</p>
+          <p class="desc">Immersive sound with noise-canceling mic.</p>
+          <button class="btn-outline add-cart" data-id="headset">Add to cart</button>
+        </article>
+        <article class="product-card">
+          <img src="images/product3.png" alt="Skin Pack" />
+          <h3>Exclusive Skin Bundle</h3>
+          <p class="price">USD 14.99</p>
+          <p class="desc">Limited edition skins for top titles.</p>
+          <button class="btn-outline add-cart" data-id="skins">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Why choose BlueDvil</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h4>Instant Delivery</h4>
+          <p>Top-ups and codes delivered immediately.</p>
+        </div>
+        <div class="feature">
+          <h4>Secure Payments</h4>
+          <p>Multiple trusted payment methods.</p>
+        </div>
+        <div class="feature">
+          <h4>24/7 Support</h4>
+          <p>Fast help for any issue.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn-primary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> BlueDvil Games</div>
+      <div class="social">Follow us: <a href="#">Twitter</a> · <a href="#">Discord</a></div>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
